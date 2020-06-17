@@ -47,8 +47,8 @@ export default class CreateExercise extends Component {
   }
 
   onSubmit = (e) => {
-    e.preventDefault();
-
+    e.preventDefault()
+    
     const exercise = {
       username: this.state.username,
       description: this.state.description,
