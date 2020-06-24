@@ -1,68 +1,93 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# _Exercise Tracker - MERN Stack_
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+#### _This is an application for tracking users and their exercises._
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### By _**Josh Forman**_
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Description
 
-### `npm test`
+_This application allows the users full CRUD of exercises associated with a chosen user. This was built as a MERN Stack application._
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_https://github.com/JPForman/mern-exercise-tracker.git_
 
-### `npm run build`
+## Setup/Installation Requirements
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* _$ git clone https://github.com/JPForman/mern-exercise-tracker.git_
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* _$ cd mern-exercise-tracker_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* _$ npm install_
 
-### `npm run eject`
+* _$ npm run start (browser will open to localhost:3000)_  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* _change to directory mern-exercise-tracker/backend_  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* _$ nodemond server (server will open to localhost:5000)_  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Routes
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+'/' -- View all logged exercises  
+'/create' -- Create exercises  
+'/user' -- Create User  
+'/edit/:id' -- Edit Selected Exercise  
+  
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Endpoints
+### Exercises  
+get http://localhost:5000/exercises  -- returns all exercise events  
+get http://localhost:5000/exercises/:id -- return exercise by id  
+delete http://localhost:5000/exercises/:id -- delete exercise by id  
+post http://localhost:5000/exercises/add  -- add an exercise event  
+post http://localhost:5000/exercises/update/:id  -- update an exercise event  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Users  
+get http://localhost:5000/users  -- returns all users  
+get http://localhost:5000/users/add  -- add a user  
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Specs
 
-### Analyzing the Bundle Size
+* _The application allows the user to view, update, and create exercise events._
+* _The application allows the user to create users._
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Known Bugs
 
-### Making a Progressive Web App
+_Readme Endpoints need updating_  
+_Needs Styling_
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+## Support and contact details
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+_Any questions, comments or contributions please contact Josh Forman (cyborgforman@gmail.com)_
 
-### Deployment
+## Technologies Used
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+_React, Webpack_
 
-### `npm run build` fails to minify
+### License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+*The MIT License
+
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.*
+
+Copyright (c) 2020 **_Josh Forman_**
