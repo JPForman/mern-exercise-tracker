@@ -1,6 +1,6 @@
 # _Exercise Tracker - MERN Stack_
 
-
+![routes](./public/trackerScreen.png)
 
 #### _This is an application for tracking users and their exercises._
 
@@ -65,7 +65,10 @@ _Any questions, comments or contributions please contact Josh Forman (cyborgform
 
 ## Technologies Used
 
-_React, Webpack_
+_React, MongoDB, Express, Node.js, Bootstrap, Axios_
+
+## Resources  
+ Special thanks to the tutorial at https://www.youtube.com/watch?v=7CqJlxBYj-M&t=618s
 
 ### License
 
